@@ -63,15 +63,50 @@ body {
   padding: 0.2em;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /* HEADER STYLING */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
+  margin-bottom: 2.5em;
+  /* border: 1px solid; */
 }
 
 /* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navlink-list {
+  display: inline;
+}
+
+.nav-searchbar {
+  margin-left: 1em;
+}
+
+.nav-searchbar input {
+  border: 1px solid #9e9d9d;
+  border-radius: 0.5em;
+  outline: none;
+  padding: 0.3em 0.5em;
+  background-color: #fff;
+  width: 220px;
+}
+
 .signup-btn {
   margin-left: 0.8em;
   background-color: #000;
@@ -104,6 +139,33 @@ body {
   text-align: center;
 }
 
+/* LANDING PAGE */
+/* HERO */
+.hero {
+  margin-bottom: 3em;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  width: 80%;
+  margin-bottom: 0.6em;
+}
+
+.hero-info {
+  margin-bottom: 1em;
+  line-height: 1.7;
+  width: 95%;
+}
+
+.hero-btn {
+  background-color: #000000e1;
+  color: #fff;
+  border-radius: 0.3em;
+}
+
+/* HOME */
+
 /* CLASSES */
 .small-screen-hide {
   display: none;
@@ -112,6 +174,6 @@ body {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 992px) {
   .small-screen-hide {
-    display: block;
+    display: flex;
   }
 }
