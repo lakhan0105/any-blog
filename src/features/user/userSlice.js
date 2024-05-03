@@ -126,6 +126,7 @@ export const userSlice = createSlice({
         state.isLoading = false;
         state.user = null;
         removeUserLS();
+        toast.success("logged out");
       })
       .addCase(logoutUser.rejected, (state, { payload }) => {
         state.isLoading = false;

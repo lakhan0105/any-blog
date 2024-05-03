@@ -24,9 +24,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch(loginUser(values));
-    setTimeout(() => {
-      navigate("/home");
-    }, 1000);
+    navigate("/home");
   };
 
   return (
@@ -38,6 +36,7 @@ function Login() {
           {/* email */}
           <div className="form-row">
             <FormInput
+              extraClass={"form-input"}
               name={"email"}
               label={"email"}
               type={"email"}
@@ -48,6 +47,7 @@ function Login() {
           {/* password */}
           <div className="form-row">
             <FormInput
+              extraClass={"form-input"}
               name={"password"}
               label={"password"}
               type={"password"}

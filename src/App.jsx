@@ -4,14 +4,30 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Home, HomeLayout, Landing, Login, Register } from "./Pages";
+import {
+  CreatePost,
+  Home,
+  HomeLayout,
+  Landing,
+  Login,
+  ProtectedRoute,
+  Register,
+} from "./Pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<HomeLayout />}>
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/createPost" element={<CreatePost />} />
         <Route path="/" element={<Landing />} />
-        <Route path="/home" element={<Home />} />
       </Route>
 
       <Route path="/register" element={<Register />} />

@@ -1,6 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import NavLinksList from "./index";
+import { NavLinksList } from "./index";
 
 function Navbar() {
   return (

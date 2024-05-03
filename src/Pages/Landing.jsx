@@ -1,7 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Landing() {
+  const { isLoading } = useSelector((state) => state.userState);
+
+  if (isLoading) {
+    return <h2>Loading...</h2>;
+  }
+
   return (
     <section className="center-cont">
       <div className="hero">

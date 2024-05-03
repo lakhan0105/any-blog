@@ -42,6 +42,7 @@ function Register() {
           {/* name */}
           <div className="form-row">
             <FormInput
+              extraClass={"form-input"}
               name={"name"}
               label={"name"}
               type={"text"}
@@ -52,6 +53,7 @@ function Register() {
           {/* email */}
           <div className="form-row">
             <FormInput
+              extraClass={"form-input"}
               name={"email"}
               label={"email"}
               type={"email"}
@@ -62,6 +64,7 @@ function Register() {
           {/* password */}
           <div className="form-row">
             <FormInput
+              extraClass={"form-input"}
               name={"password"}
               label={"password"}
               type={"password"}
